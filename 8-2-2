@@ -1,0 +1,23 @@
+package work;
+import java.util.Scanner;
+public class WK8_2_2 {
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		int score;
+		int sum=0;
+		int score60Number=0;
+		int NOTscore60Number=0;
+		for(int i=0;i<10;i++){
+			System.out.print("请输入10名学生成绩中第"+(i+1)+"名同学的成绩");
+			score=input.nextInt();
+			sum=sum+score;
+			if(score>=60){
+				score60Number++;
+		}else{
+			NOTscore60Number++;
+		}
+		}
+		System.out.println("及格的人数："+score60Number);
+		System.out.println("不及格的人数："+NOTscore60Number);
+	}
+}                                //11.13 22：42
