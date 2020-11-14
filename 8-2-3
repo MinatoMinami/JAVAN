@@ -1,0 +1,29 @@
+package work;
+import java.util.Scanner;
+public class WK8_2_3 {
+	public static void main(String[] args) {
+		int score,score90Number=0,score80Number=0,score70Number=0,score60Number=0,scoreX60Number=0;
+		Scanner input=new Scanner(System.in);
+		for(int i=0;i<10;i++){
+			System.out.print("请输入10名学生中第"+(i+1)+"个成绩");
+			score=input.nextInt();
+			if(score>=90&&score<=100){
+				score90Number++;
+			}else if(score>=80){
+				score80Number++;
+			}else if(score>=70){
+				score70Number++;
+			}else if(score>=60){
+				score60Number++;
+			}else {
+				scoreX60Number++;
+			}
+		}
+				System.out.println("90分以上的人数："+score90Number);
+				System.out.println("80分以上的人数："+score80Number);
+				System.out.println("70分以上的人数："+score70Number);
+				System.out.println("60分以上的人数："+score60Number);
+				System.out.println("60分以下的人数："+scoreX60Number);
+	}
+}
+                                               //11.9 21：55 /11.13 22：46
