@@ -1,0 +1,16 @@
+package work;
+import java.util.Scanner;
+public class WK8_1_1 {
+	public static void main(String[] args) {
+	int sum=0;
+	int i=1;
+	while (i<=100){
+		if (i%2==0){//模0=偶数
+		sum+=i;//偶数进来后他们相加
+		}
+		i++;
+		}
+	System.out.println("sum="+sum);
+	}
+}
+                     //11.13 22:08 NOTME
