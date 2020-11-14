@@ -1,0 +1,43 @@
+package work;
+import java.util.Scanner;
+public class WK3_5_3_NEW {
+	public static void main(String[] args) {
+		int J;
+		int Y;
+		Scanner input=new Scanner(System.in);
+		{
+			System.out.print("请输入衣服件数：");
+			J=input.nextInt();
+			System.out.print("请输入总金额：");
+			Y=input.nextInt();
+			if(J<5){
+				J=1;
+			}else if(J>=5&&J<10){
+				J=2;
+			}else if(J>=10&&J<19){
+				J=3;
+			}else if(J>=20&&J<29){
+				J=4;
+			}else {
+				J=5;
+			}
+		}
+				
+				switch(J){
+				case 1:
+					System.out.println("折扣为9折，折后金额为"+Y*0.9);
+					break;
+			    case 2:
+			    	System.out.println("折扣为8折，折后金额为"+Y*0.8);
+			    	break;
+			    case 3:
+			    	System.out.println("折扣为7折，折后金额为"+Y*0.7);
+			    	break;
+			    case 4:
+			    	System.out.println("折扣为6折，折后金额为"+Y*0.6);
+			    	break;
+			    	default:
+			    		System.out.println("折扣为5.5折，折后金额为"+Y*0.55);
+				}
+	}
+}                                              //11.12 23:19 ありがとう　ドレミ  /11.13 21.47
