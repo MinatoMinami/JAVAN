@@ -1,0 +1,17 @@
+package work;
+import java.util.Scanner;
+public class WK9_4_3 {
+	public static void main(String[] args) {
+		int A,F;
+		for(A=1;A<=5;A++){
+			for(int KB=4;KB>=A;KB--)
+		{
+				System.out.print(" ");
+		}
+			for(F=1;F<=2*A-1;F++){
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}
